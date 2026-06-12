@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="متجري">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>متجري</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!--  Firebase SDK (الجزء المهم الذي كان ناقصاً) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+  
+  <script>
+    // إعدادات Firebase من مشروعك
+    const firebaseConfig = {
+      apiKey: "AIzaSyDYZRI_a59uNLGbpYy79pSaVHlq6-jypR8",
+      authDomain: "aymen-abdulwahab-store.firebaseapp.com",
+      projectId: "aymen-abdulwahab-store",
+      storageBucket: "aymen-abdulwahab-store.firebasestorage.app",
+      messagingSenderId: "1092005505168",
+      appId: "1:1092005505168:web:ae3b710dd049adfa0e1015"
+    };
+    
+    // تهيئة Firebase
+    firebase.initializeApp(firebaseConfig);
+    console.log(" Firebase initialized successfully");
+  </script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
